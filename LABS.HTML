@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratories - Gossairhat Rajamohan High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: WhiteSmoke;
+            color: #343a40;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        .header-content {
+            padding: 20px;
+            background: url('school_background.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header-content img {
+            width: 80px;
+            margin: 10px 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content h1 {
+            font-size: 2.3rem;
+            margin: 0;
+            animation: textAnimation 2s infinite;
+        }
+
+        .header-content p {
+            font-size: 1.1rem;
+            color: #FFFF00;
+            margin: 0;
+        }
+
+        @keyframes textAnimation {
+            0%, 100% { color: #fff; }
+            50% { color: #ff0; }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #483D8B;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.0rem;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(52, 58, 64, 0.8); /* Transparent background */
+        }
+
+        .dropdown-menu a {
+            color: #7FFF00;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #495057;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold; /* Making the font bold for all nav links */
+        }
+
+        .dropdown-toggle {
+            font-weight: bold; /* Making the font bold for dropdown toggles */
+        }
+
+        .dropdown-item {
+            font-weight: bold; /* Making the font bold for dropdown items */
+        }
+
+        /* Lab Facilities Section */
+        .lab-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: #E0FFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .lab-title {
+            color: #004d40;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .lab-card {
+            background: #e3f2fd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .lab-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .lab-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #006699;
+        }
+
+        .lab-content {
+            padding: 1.5rem;
+        }
+
+        .lab-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lab-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .smart-class-section {
+            background: #e3f2fd;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .lab-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Contact Us Section */
+        .contact-section {
+            background-color: LemonChiffon; /* Green background color */
+            color: BLACK;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .contact-section a {
+            color: BLUE;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header-content">
+        <img src="shikha.png" alt="Left Logo">
+        <img src="GRMHSLOGO.PNG" alt="Center Logo">
+        <img src="logo1.png" alt="Right Logo">
+        <h1>GOSSAIRHAT RAJAMOHAN HIGH SCHOOL(XII)</h1>
+        <h3>ESTD. 1952</h3>
+        <p><b>Affiliated to WBBSE and WBCHSE</b></p>
+    </div>
+
+    
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">LAB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="about us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <strong>about us</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <a class="dropdown-item" href="aboutus.html"><strong>about us</strong></a>
+                            <a class="dropdown-item" href="contactus.html">contact us</a>                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+<a class="dropdown-item" href="admission.HTML">admission</a>
+                            
+                            <a class="dropdown-item" href="STUDENT_DETAILS.HTML">Student Details</a>
+                            <a class="dropdown-item" href="results.HTML">Results</a>
+                            <a class="dropdown-item" href="ROUTINE.HTML">Routine</a>
+                            <a class="dropdown-item" href="syllabus.HTML">syllabus</a>
+<a class="dropdown-item" href="toppers.html">toppers of 2024-25</a>
+
+                        </div>
+<li class="nav-item"><a class="nav-link" href="gallery.html">gallery</a></li>
+
+                    </li>
+<li class="nav-item"><a class="nav-link" href="SCHOLaRSHIP.HTML">Scholarships</a></li>
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="administrationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administration
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="administrationDropdown">
+                            <a class="dropdown-item" href="managing.html">Managing Committee</a>
+                            <a class="dropdown-item" href="teaching.html">Teaching Staff</a>
+                            <a class="dropdown-item" href="nts.html">Non-Teaching Staff</a>
+                            <a class="dropdown-item" href="VOCATIONAL.html">Vocational</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="miscellaneousDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Miscellaneous
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="miscellaneousDropdown">
+                            <a class="dropdown-item" href="sports.HTML">Sports</a>
+                            <a class="dropdown-item" href="labs.HTML">lab</a>
+                            <a class="dropdown-item" href="smartclass.HTML">smart class</a>
+                            <a class="dropdown-item" href="HOUSE.html">House</a>
+                            <a class="dropdown-item" href="ACHIVEMENTS.html">Achievements</a>
+                            <a class="dropdown-item" href="STUDENT_COUNCIL.html">Student Council</a>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="alumni.html">alumni</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Lab Facilities Section -->
+    <div class="lab-container">
+        <h2 class="lab-title">Our State-of-the-Art Laboratories</h2>
+        <div class="lab-grid">
+            <!-- Physics Lab -->
+            <div class="lab-card">
+                <img src="physics-lab.jpg" alt="Physics Laboratory" class="lab-image">
+                <div class="lab-content">
+                    <h3 class="lab-title">Physics Laboratory</h3>
+                    <ul class="lab-features">
+                        <li>Modern experimental setups</li>
+                        <li>Advanced measurement instruments</li>
+                        <li>Safety-equipped workspace</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chemistry Lab -->
+            <div class="lab-card">
+                <img src="chemistry-lab.jpg" alt="Chemistry Laboratory" class="lab-image">
+                <div class="lab-content">
+                    <h3 class="lab-title">Chemistry Laboratory</h3>
+                    <ul class="lab-features">
+                        <li>Fume hoods and safety showers</li>
+                        <li>Digital weighing machines</li>
+                        <li>Chemical storage system</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Biology Lab -->
+            <div class="lab-card">
+                <img src="bio-lab.jpg" alt="Biology Laboratory" class="lab-image">
+                <div class="lab-content">
+                    <h3 class="lab-title">Biology Laboratory</h3>
+                    <ul class="lab-features">
+                        <li>Microscopes with digital imaging</li>
+                        <li>Specimen collection</li>
+                        <li>Interactive models</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ICT Lab -->
+            <div class="lab-card">
+                <img src="ict-lab.jpg" alt="ICT Laboratory" class="lab-image">
+                <div class="lab-content">
+                    <h3 class="lab-title">ICT Laboratory</h3>
+                    <ul class="lab-features">
+                        <li>10 High-end computers</li>
+                        <li>KYAN Digital Classroom System</li>
+                        <li>Programming software suite</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mathematics Lab -->
+            <div class="lab-card">
+                <img src="math-lab.jpg" alt="Mathematics Laboratory" class="lab-image">
+                <div class="lab-content">
+                    <h3 class="lab-title">Mathematics Laboratory</h3>
+                    <ul class="lab-features">
+                        <li>3D geometry models</li>
+                        <li>Statistical analysis tools</li>
+                        <li>Interactive learning kits</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Geography Lab -->
+            <div class="lab-card">
+                <img src="geo-lab.jpg" alt="Geography Laboratory" class="lab-image">
+                <div class="lab-content">
+                    <h3 class="lab-title">Geography Laboratory</h3>
+                    <ul class="lab-features">
+                        <li>Topographic maps collection</li>
+                        <li>Weather monitoring instruments</li>
+                        <li>GIS software systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Smart Class Section -->
+        <div class="smart-class-section">
+            <h2 style="color: #004d40;">Smart Class Facilities</h2>
+            <div class="lab-grid">
+                <div class="lab-card">
+                    <img src="smart-class1.jpg" alt="Smart Classroom" class="lab-image">
+                    <div class="lab-content">
+                        <h3 class="lab-title">Digital Classroom 1</h3>
+                        <ul class="lab-features">
+                            <li>86" 4K Interactive Display</li>
+                            <li>Multi-touch capability</li>
+                            <li>Subject-specific software</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <img src="smart-class2.jpg" alt="Smart Classroom" class="lab-image">
+                    <div class="lab-content">
+                        <h3 class="lab-title">Digital Classroom 2</h3>
+                        <ul class="lab-features">
+                            <li>Interactive Whiteboard</li>
+                            <li>Audio-visual recording system</li>
+                            <li>Wireless presentation tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p><b>If you have any questions or would like to schedule a visit, please feel free to contact us:</b></p>
+        <p><b>Email: <a href="mailto:info@gossairhatschool.edu">info@gossairhatschool.edu</a></b></p>
+        <p><b>Phone: <a href="tel:+917384773243">+917384773243</a></b></p>
+        <p><b>Address: Gossairhat Rajamohan High School, Thakurpath, Dhupguri, Jalpaiguri (WB) 735210</b></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Design & Developed by Mugdha Bhattacharjee (MCA), ICT School Teacher (Gossairhat Rajamohan High School (XII))</p>
+        <p>&copy; 2025 Gossairhat Rajamohan High School. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

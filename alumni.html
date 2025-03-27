@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni - Gossairhat Rajamohan High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        .header-content {
+            padding: 20px;
+            background: url('school_background.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header-content img {
+            width: 80px;
+            margin: 10px 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content h1 {
+            font-size: 2.3rem;
+            margin: 0;
+            animation: textAnimation 2s infinite;
+        }
+
+        .header-content p {
+            font-size: 1.1rem;
+            color: #FFFF00;
+            margin: 0;
+        }
+
+        @keyframes textAnimation {
+            0%, 100% { color: #fff; }
+            50% { color: #ff0; }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #483D8B;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.0rem;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(52, 58, 64, 0.8); /* Transparent background */
+        }
+
+        .dropdown-menu a {
+            color: #7FFF00;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #495057;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold; /* Making the font bold for all nav links */
+        }
+
+        .dropdown-toggle {
+            font-weight: bold; /* Making the font bold for dropdown toggles */
+        }
+
+        .dropdown-item {
+            font-weight: bold; /* Making the font bold for dropdown items */
+        }
+
+        /* Alumni Section */
+        .alumni-section {
+            background-color: #E0FFFF;
+            color: #343a40;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .alumni-section h2 {
+            color: #4CAF50;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .alumni-section h3 {
+            color: #4CAF50;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .alumni-section p {
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .alumni-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .alumni-table th, .alumni-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .alumni-table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .alumni-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .alumni-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .alumni-table tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        .alumni-table td {
+            color: #333;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .alumni-photo {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: LemonChiffon;
+            color: #343a40;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #4CAF50;
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .contact-section a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-content img {
+                width: 60px;
+                margin: 10px 0;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .header-content p {
+                font-size: 1rem;
+            }
+
+            .alumni-section, .contact-section {
+                padding: 20px;
+            }
+
+            .alumni-section h2, .contact-section h2 {
+                font-size: 2rem;
+            }
+
+            .alumni-table th, .alumni-table td {
+                padding: 10px;
+            }
+
+            .alumni-photo {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header-content">
+        <img src="grmhslogo.png" alt="Left Logo">
+        <div>
+            <h1>GOSSAIRHAT RAJAMOHAN HIGH SCHOOL(XII)</h1>
+            <p><strong>Estd. 1952</strong></p>
+            <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+              <p><strong>Index No: NI-041</strong></p>
+              <p><strong>HS Code No: 108088</strong></p>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+              <p><strong>Voc Code: 8798</strong></p>
+              <p><strong>Affiliated to WBBSE and WBCHSE</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ALUMNI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="about us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <strong>about us</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <a class="dropdown-item" href="aboutus.html"><strong>about us</strong></a>
+                            <a class="dropdown-item" href="contactus.html">contact us</a>                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+<a class="dropdown-item" href="admission.HTML">admission</a>
+                            
+                            <a class="dropdown-item" href="STUDENT_DETAILS.HTML">Student Details</a>
+                            <a class="dropdown-item" href="results.HTML">Results</a>
+                            <a class="dropdown-item" href="ROUTINE.HTML">Routine</a>
+                            <a class="dropdown-item" href="syllabus.HTML">syllabus</a>
+<a class="dropdown-item" href="toppers.html">toppers of 2024-25</a>
+
+                        </div>
+<li class="nav-item"><a class="nav-link" href="gallery.html">gallery</a></li>
+
+                    </li>
+<li class="nav-item"><a class="nav-link" href="SCHOLaRSHIP.HTML">Scholarships</a></li>
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="administrationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administration
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="administrationDropdown">
+                            <a class="dropdown-item" href="managing.html">Managing Committee</a>
+                            <a class="dropdown-item" href="teaching.html">Teaching Staff</a>
+                            <a class="dropdown-item" href="nts.html">Non-Teaching Staff</a>
+                            <a class="dropdown-item" href="VOCATIONAL.html">Vocational</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="miscellaneousDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Miscellaneous
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="miscellaneousDropdown">
+                            <a class="dropdown-item" href="sports.HTML">Sports</a>
+                            <a class="dropdown-item" href="labs.HTML">lab</a>
+                            <a class="dropdown-item" href="smartclass.HTML">smart class</a>
+                            <a class="dropdown-item" href="HOUSE.html">House</a>
+                            <a class="dropdown-item" href="ACHIVEMENTS.html">Achievements</a>
+                            <a class="dropdown-item" href="STUDENT_COUNCIL.html">Student Council</a>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="alumni.html">alumni</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Alumni Section -->
+    <div class="alumni-section">
+        <h2>Alumni</h2>
+        <h3>Our Esteemed Alumni</h3>
+        <p>We are proud of our alumni who have excelled in various fields and contributed to society. Below are some of our notable alumni:</p>
+        
+        <table class="alumni-table">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Year of Graduation</th>
+                    <th>Current Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="alumni1.jpg" alt="Alumni 1" class="alumni-photo"></td>
+                    <td>John Doe</td>
+                    <td>2005</td>
+                    <td>CEO, Tech Solutions</td>
+                </tr>
+                <tr>
+                    <td><img src="alumni2.jpg" alt="Alumni 2" class="alumni-photo"></td>
+                    <td>Jane Smith</td>
+                    <td>2010</td>
+                    <td>Professor, University of XYZ</td>
+                </tr>
+                <tr>
+                    <td><img src="alumni3.jpg" alt="Alumni 3" class="alumni-photo"></td>
+                    <td>Michael Johnson</td>
+                    <td>2015</td>
+                    <td>Senior Engineer, ABC Corp</td>
+                </tr>
+                <!-- Add more alumni as needed -->
+            </tbody>
+        </table>
+        
+        <h3>Alumni Events</h3>
+        <p>We regularly organize events to bring our alumni together and celebrate their achievements. Stay tuned for upcoming events!</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to schedule a visit, please feel free to contact us:</p>
+        <p>Email: <a href="mailto:info@gossairhatschool.edu">info@gossairhatschool.edu</a></p>
+        <p>Phone: <a href="tel:+917384773243">+917384773243</a></p>
+        <p>Address: Gossairhat Rajamohan High School, Thakurpath, Dhupguri, Jalpaiguri (WB) 735210</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Design & Developed by Mugdha Bhattacharjee (MCA), ICT School Teacher (Gossairhat Rajamohan High School (XII))</p>
+        <p>&copy; 2025 Gossairhat Rajamohan High School. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

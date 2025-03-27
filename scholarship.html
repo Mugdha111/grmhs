@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বৃত্তি - গোসাইরহাট রাজমোহন উচ্চ বিদ্যালয়</title>
+    
+    <!-- Bengali Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Bengali', 'Kalpurush', 'Siyam Rupali', sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Section */
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: url('school_background.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content img {
+            width: 80px;
+            margin: 10px 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: textAnimation 2s infinite;
+        }
+
+        .header-content p {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        @keyframes textAnimation {
+            0%, 100% { color: #fff; }
+            50% { color: #ff0; }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #483D8B;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.0rem;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(52, 58, 64, 0.8); /* Transparent background */
+        }
+
+        .dropdown-menu a {
+            color: #2E8B57;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #495057;
+        }
+
+        /* Scholarship Section */
+        .scholarship-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .scholarship-card {
+            background: white;
+            border-radius: 10px;
+            margin: 25px 0;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .scholarship-card img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .scholarship-title {
+            color: #2e7d32;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .requirements-list {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+
+        .nodal-teacher {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Contact Us Section */
+        .contact-section {
+            background-color: LemonChiffon;
+            color: #343a40;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        .contact-section .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section .card-body {
+            padding: 20px;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .contact-section a {
+            color: BLACK;
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-content img {
+                width: 60px;
+                margin: 10px 0;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .header-content p {
+                font-size: 1rem;
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+        }
+/* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-content img {
+                width: 60px;
+                margin: 10px 0;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .header-content p {
+                font-size: 1rem;
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-content">
+        <img src="shikha.png" alt="Left Logo">
+        <div>
+            <h1>GOSSAIRHAT RAJAMOHAN HIGH SCHOOL(XII)</h1>
+            <p><b>Estd. 1952</b></p>
+            <p><b>Affiliated to WBBSE and WBCHSE</b></p>
+        </div>
+        <img src="logo1.png" alt="Right Logo">
+    </div>
+
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">SCHOLARSHIPS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="about us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <strong>about us</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <a class="dropdown-item" href="aboutus.html"><strong>about us</strong></a>
+                            <a class="dropdown-item" href="contactus.html">contact us</a>                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+<a class="dropdown-item" href="admission.HTML">admission</a>
+                            
+                            <a class="dropdown-item" href="STUDENT_DETAILS.HTML">Student Details</a>
+                            <a class="dropdown-item" href="results.HTML">Results</a>
+                            <a class="dropdown-item" href="ROUTINE.HTML">Routine</a>
+                            <a class="dropdown-item" href="syllabus.HTML">syllabus</a>
+<a class="dropdown-item" href="toppers.html">toppers of 2024-25</a>
+
+                        </div>
+<li class="nav-item"><a class="nav-link" href="gallery.html">gallery</a></li>
+
+                    </li>
+<li class="nav-item"><a class="nav-link" href="SCHOLaRSHIP.HTML">Scholarships</a></li>
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="administrationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administration
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="administrationDropdown">
+                            <a class="dropdown-item" href="managing.html">Managing Committee</a>
+                            <a class="dropdown-item" href="teaching.html">Teaching Staff</a>
+                            <a class="dropdown-item" href="nts.html">Non-Teaching Staff</a>
+                            <a class="dropdown-item" href="VOCATIONAL.html">Vocational</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="miscellaneousDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Miscellaneous
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="miscellaneousDropdown">
+                            <a class="dropdown-item" href="sports.HTML">Sports</a>
+                            <a class="dropdown-item" href="labs.HTML">lab</a>
+                            <a class="dropdown-item" href="smartclass.HTML">smart class</a>
+                            <a class="dropdown-item" href="HOUSE.html">House</a>
+                            <a class="dropdown-item" href="ACHIVEMENTS.html">Achievements</a>
+                            <a class="dropdown-item" href="STUDENT_COUNCIL.html">Student Council</a>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="alumni.html">alumni</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Scholarship Section -->
+    <div class="scholarship-container">
+        
+        <!-- স্বামী বিবেকানন্দ বৃত্তি -->
+        <div class="scholarship-card">
+            <h2 class="scholarship-title">স্বামী বিবেকানন্দ মেরিট কাম মিন্স স্কলারশিপ</h2>
+            <img src="scholarship1.PNG" alt="স্বামী বিবেকানন্দ বৃত্তি">
+            <p>অনলাইন পোর্টাল- www.svmcm.wbhed.gov.in</p>
+            <p>একাদশ ও দ্বাদশ শ্রেণীতে পাঠরত সকল ছাত্রছাত্রী যারা মাধ্যমিক ও একাদশ শ্রেণীর পরীক্ষায় 60% এর উপর নম্বর পেয়েছে তারা আবেদন করতে পারবে। অনলাইনে আবেদন করে আবেদন পত্র বিদ্যালয়ে জমা দিতে হবে।</p>
+            <p>আবেদন করতে লাগবে ফটো, ভর্তির রসিদ, আধার কার্ড, ব্যাঙ্কের বই, ইনকাম সার্টিফিকেট, মার্কশিট।</p>
+            <div class="nodal-teacher">
+                📞 নোডাল শিক্ষক: তমাল চক্রবর্তী (94759-08777)
+            </div>
+        </div>
+
+        <!-- কন্যাশ্রী প্রকল্প -->
+        <div class="scholarship-card">
+            <h2 class="scholarship-title">কন্যাশ্রী প্রকল্প</h2>
+            <img src="scholarship2.PNG" alt="কন্যাশ্রী বৃত্তি">
+            <p>অষ্টম থেকে দ্বাদশ শ্রেণীতে পাঠরত সকল ছাত্রীদের জন্য এই প্রকল্পে প্রতি বছর ১০০০টাকা ও ১৮ বছর বয়সে এককালীন ২৫০০০ টাকা দেওয়া হয়। বিদ্যালয়ের মাধ্যমে অষ্টম শ্রেণীতে আবেদন করতে হবে। অষ্টম শ্রেণীর পরে অন্য বিদ্যালয় থেকে ভর্তি হলে কন্যাশ্রী ID নম্বর ট্রান্সফার করে আনতে হবে। আবেদন করার জন্য ফটো, ভর্তির রসিদ, ব্যাঙ্কের বই, আধার কার্ড, বার্থ সার্টিফিকেট, বাবা ও মায়ের ভোটার কার্ড ও আধার কার্ড লাগবে।</P>
+            <div class="nodal-teacher">
+                📞 নোডাল শিক্ষক: তমাল চক্রবর্তী (94759-08777)
+            </div>
+        </div>
+
+        <!-- ঐক্যশ্রী স্কলারশিপ -->
+        <div class="scholarship-card">
+            <h2 class="scholarship-title">ঐক্যশ্রী স্কলারশিপ</h2>
+            <img src="scholarship3.JPEG" alt="ঐক্যশ্রী বৃত্তি">
+            <p>অনলাইন পোর্টাল- wbmdfcschool.gov.in</p>
+            <p>পঞ্চম থেকে দ্বাদশ শ্রেণীর সমস্ত মাইনরিটি ছাত্র-ছাত্রী যারা গত বছর ৫০ শতাংশ নম্বর পেয়েছে তারা আবেদন করতে পারবে। অনলাইনে আবেদন করে আবেদনপত্র ও ডকুমেন্টস বিদ্যালয়ে জমা করতে হবে। আবেদন করতে লাগবে ব্যাঙ্কের বই, আধার কার্ড, গতবারের মার্কশিটের জেরক্স, বার্থ সার্টিফিকেট জেরক্স ও একটি ফোন নম্বর।</p>   
+            <div class="nodal-teacher">
+                📞 নোডাল শিক্ষক: পবিত্র রায় (83489-52666)
+            </div>
+        </div>
+
+        <!-- শিক্ষাশ্রী প্রকল্প -->
+        <div class="scholarship-card">
+            <h2 class="scholarship-title">শিক্ষাশ্রী প্রকল্প</h2>
+            <img src="scholarship4.JPEG" alt="শিক্ষাশ্রী বৃত্তি">
+            <ul>
+                <li>পঞ্চম থেকে অষ্টম শ্রেণীর আওতায় পাবে বার্ষিক ভাতা।</li>
+                <li>সমস্ত তফশিলি ও উপজাতি সম্প্রদায়ের ছাত্রীরা আবেদনের যোগ্য।</li>
+                <li>প্রকল্পের আওতাধীন ছাত্রীর ব্যঙ্ক অ্যাকাউন্ট থাকা আবশ্যিক।</li>
+                <li>যে তফশিলি জাতি এবং উপজাতি পরিবারের ছাত্রী আবেদন করবে, সেই পরিবারের বার্ষিক আয় আড়াই লক্ষ টাকার কম হতে হবে।</li>
+            </ul>
+            <h2>প্রমাণপত্র জমা দিতে হবে:</h2>
+            <ol>
+                <li>আধার কার্ড।</li>
+                <li>কাস্ট সার্টিফিকেট।</li>
+                <li>ইনকাম সার্টিফিকেট।</li>
+                <li>ব্যাঙ্ক অ্যাকাউন্টের যাবতীয় তথ্য।</li>
+                <li>পাসপোর্ট সাইজের ছবি।</li>
+            </ol>
+            <div class="nodal-teacher">
+                📞 নোডাল শিক্ষক: মনোজ দেবনাথ (98324-75645)
+            </div>
+        </div>
+
+        <!-- সবুজ সাথী -->
+        <div class="scholarship-card">
+            <h2 class="scholarship-title">সবুজ সাথী</h2>
+            <img src="scholarship5.JPEG" alt="সবুজ সাথী প্রকল্প">
+            <p>এই প্রকল্পে নবম শ্রেণীতে পাঠরত সমস্ত ছাত্রছাত্রীদের পশ্চিমবঙ্গ সরকারের দ্বারা সাইকেল প্রদান করা হয়।</p>
+            <ul class="requirements-list">
+                <li>নবম শ্রেণীর ছাত্রছাত্রীদের জন্য সাইকেল</li>
+                <li>আবেদন পদ্ধতি: বিদ্যালয়ের মাধ্যমে</li>
+            </ul>
+            <div class="nodal-teacher">
+                📞 নোডাল শিক্ষক: মনোজ দেবনাথ (98324-75645)
+            </div>
+        </div>
+
+        <!-- তরুণের স্বপ্ন -->
+        <div class="scholarship-card">
+            <h2 class="scholarship-title">তরুণের স্বপ্ন</h2>
+            <img src="scholarship6.JPEG" alt="তরুণের স্বপ্ন">
+            <p>এই প্রকল্পে দ্বাদশ শ্রেণীতে পাঠরত সমস্ত ছাত্রছাত্রীদের পশ্চিমবঙ্গ সরকারের দ্বারা মোবাইল/ ট্যাব কেনার জন্য 10000.00 (দশ হাজার) টাকা করে প্রদান করা হয়।</p>
+            <div class="nodal-teacher">
+                📞 নোডাল শিক্ষক: Mugdha Bhattacharjee (73847-73243)
+            </div>
+        </div>
+
+        <!-- OASIS ONLINE APPLICATION SCHOLERSHIP -->
+        <div class="scholarship-card">
+            <h2 class="scholarship-title">OASIS ONLINE APPLICATION SCHOLERSHIP</h2>
+            <img src="scholarship7.jpg" alt="OASIS">
+            <p>অনলাইন পোর্টাল- www.oasis.gov.in</p>
+            <p>নবম ও দশম SC/ST শ্রেণীর ছাত্রছাত্রীরা এবং একাদশ ও দ্বাদশ শ্রেণীর SC/ST/OBC ছাত্রছাত্রীরা আবেদন করতে পারবে। অনলাইনে আবেদন করে আবেদনপত্র ও ডকুমেন্টস বিদ্যালয়ে জমা করতে হবে।</p>
+            <p>আবেদন করতে লাগবে ভর্তির রসিদ, কাস্ট সার্টিফিকেট, ইনকাম সার্টিফিকেট, আধার কার্ড, ব্যাঙ্কের বই, মার্কশীট, রেশন কার্ড।</p>
+            <div class="nodal-teacher">
+                📞 নোডাল শিক্ষক: তমাল চক্রবর্তী (94759-08777)
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="scholarship-card" style="background: #ffebee;">
+            <h2 style="color: #c62828;">গুরুত্বপূর্ণ নির্দেশিকা</h2>
+            <p><b>ছাত্রছাত্রীদের বিশেষভাবে নির্দেশ দেওয়া হচ্ছে যে, যে কোনো স্কলারশিপের অনলাইন আবেদন করার সময় নিজের নাম, বাবার নাম, মায়ের নাম, জন্মতারিখ, SC/ST/OBC, মোবাইল নম্বর, ক্লাস, বিভাগ, রোল নম্বর ইত্যাদি তথ্য সঠিক ভাবে আপলোড করতে। নামের বানান বা কোনো তথ্যে ভুল থাকলে তার আবেদন বাতিল হবে। কারো আধার কার্ড, রেশন কার্ড, বার্থ সার্টিফিকেট ভুল থাকলে নির্দিষ্ট দপ্তরে যোগাযোগ করে অতি সত্বর ঠিক করে নেবে।</b></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: info@gossairhatschool.edu</p>
+        <p>Phone: +91 73847 73243</p>
+        <p>Address: গোসাইরহাট রাজমোহন
+            , থাকুরপথ, ধূপগুড়ি, জলপাইগুড়ি (পশ্চিমবঙ্গ) ৭৩৫২১০</p>
+    </div>
+
+ <footer>
+        <p>Design & Developed by Mugdha Bhattacharjee (MCA), ICT School Teacher (Gossairhat Rajamohan High School (XII))</p>
+        <p>&copy; 2025 Gossairhat Rajamohan High School. All rights reserved.</p>
+    </footer>
+
+<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

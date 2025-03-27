@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Staff - Gossairhat Rajamohan High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        /* Header Section */
+        .header-content {
+            padding: 20px;
+            background: url('school_background.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header-content img {
+            width: 80px;
+            margin: 10px 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content h1 {
+            font-size: 2.3rem;
+            margin: 0;
+            animation: textAnimation 2s infinite;
+        }
+
+        .header-content p {
+            font-size: 1.1rem;
+            color: #FFFF00;
+            margin: 0;
+        }
+
+        @keyframes textAnimation {
+            0%, 100% { color: #fff; }
+            50% { color: #ff0; }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #483D8B;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.0rem;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(52, 58, 64, 0.8); /* Transparent background */
+        }
+
+        .dropdown-menu a {
+            color: #7FFF00;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #495057;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold; /* Making the font bold for all nav links */
+        }
+
+        .dropdown-toggle {
+            font-weight: bold; /* Making the font bold for dropdown toggles */
+        }
+
+        .dropdown-item {
+            font-weight: bold; /* Making the font bold for dropdown items */
+        }
+
+        /* Teaching Staff Section */
+        .staff-section {
+            background-color: #E0FFFF;
+            color: #343a40;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .staff-section h2 {
+            color: #4CAF50;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .staff-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .staff-table th, .staff-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .staff-table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .staff-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .staff-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .staff-table tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        .staff-table td {
+            color: #333;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .staff-photo {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-content img {
+                width: 60px;
+                margin: 10px 0;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .header-content p {
+                font-size: 1rem;
+            }
+
+            .staff-section {
+                padding: 20px;
+            }
+
+            .staff-section h2 {
+                font-size: 2rem;
+            }
+
+            .staff-table th, .staff-table td {
+                padding: 10px;
+            }
+
+            .staff-photo {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header-content">
+        <img src="grmhslogo.png" alt="Left Logo">
+        <div>
+            <h1>GOSSAIRHAT RAJAMOHAN HIGH SCHOOL(XII)</h1>
+            <p><strong>Estd. 1952</strong></p>
+            <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+              <p><strong>Index No: NI-041</strong></p>
+              <p><strong>HS Code No: 108088</strong></p>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+              <p><strong>Voc Code: 8798</strong></p>
+              <p><strong>Affiliated to WBBSE and WBCHSE</strong></p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ADMINISTRATION</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="about us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <strong>about us</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <a class="dropdown-item" href="aboutus.html"><strong>about us</strong></a>
+                            <a class="dropdown-item" href="contactus.html">contact us</a>                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+<a class="dropdown-item" href="admission.HTML">admission</a>
+                            
+                            <a class="dropdown-item" href="STUDENT_DETAILS.HTML">Student Details</a>
+                            <a class="dropdown-item" href="results.HTML">Results</a>
+                            <a class="dropdown-item" href="ROUTINE.HTML">Routine</a>
+                            <a class="dropdown-item" href="syllabus.HTML">syllabus</a>
+<a class="dropdown-item" href="toppers.html">toppers of 2024-25</a>
+
+                        </div>
+<li class="nav-item"><a class="nav-link" href="gallery.html">gallery</a></li>
+
+                    </li>
+<li class="nav-item"><a class="nav-link" href="SCHOLaRSHIP.HTML">Scholarships</a></li>
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="administrationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administration
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="administrationDropdown">
+                            <a class="dropdown-item" href="managing.html">Managing Committee</a>
+                            <a class="dropdown-item" href="teaching.html">Teaching Staff</a>
+                            <a class="dropdown-item" href="nts.html">Non-Teaching Staff</a>
+                            <a class="dropdown-item" href="VOCATIONAL.html">Vocational</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="miscellaneousDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Miscellaneous
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="miscellaneousDropdown">
+                            <a class="dropdown-item" href="sports.HTML">Sports</a>
+                            <a class="dropdown-item" href="labs.HTML">lab</a>
+                            <a class="dropdown-item" href="smartclass.HTML">smart class</a>
+                            <a class="dropdown-item" href="HOUSE.html">House</a>
+                            <a class="dropdown-item" href="ACHIVEMENTS.html">Achievements</a>
+                            <a class="dropdown-item" href="STUDENT_COUNCIL.html">Student Council</a>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="alumni.html">alumni</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Teaching Staff Section -->
+    <div class="staff-section">
+        <h2>Our Teaching Staff</h2>
+        <table class="staff-table">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Subject</th>
+                    <th>Qualification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="photo1.jpg" alt="MD MOKTAR HOSSAIN" class="staff-photo"></td>
+                    <td>MD MOKTAR HOSSAIN</td>
+                    <td>HEADMASTER</td>
+                    <td>MATHEMATICS</td>
+                    <td>M.Sc(MATH), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo2.jpg" alt="MANALI ROY" class="staff-photo"></td>
+                    <td>MANALI ROY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>BENGALI</td>
+                    <td>MA(BENGALI), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo3.jpg" alt="BARUN ROY" class="staff-photo"></td>
+                    <td>BARUN ROY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>MATH</td>
+                    <td>M.sc(MATH), B.ed, MA (EDUCATION)</td>
+                </tr>
+                <tr>
+                    <td><img src="photo4.jpg" alt="GEETA ROY" class="staff-photo"></td>
+                    <td>GEETA ROY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>WORK EDUCATION</td>
+                    <td>MA(HISTORY), B.ed, L.B.D</td>
+                </tr>
+                <tr>
+                    <td><img src="photo5.jpg" alt="KUNAL SENGUPTA" class="staff-photo"></td>
+                    <td>KUNAL SENGUPTA</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>GEOGRAPHY</td>
+                    <td>M.sc(GEOGRAPHY), JBT, D.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo6.jpg" alt="DIPAK BASAK" class="staff-photo"></td>
+                    <td>DIPAK BASAK</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>SANSKRIT</td>
+                    <td>MA(SANSKRIT), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo7.jpg" alt="NANI GOPAL ROY" class="staff-photo"></td>
+                    <td>NANI GOPAL ROY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>PHYSICS</td>
+                    <td>B.SC(PHYSICS), B.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo8.jpg" alt="KUNTAL HORE" class="staff-photo"></td>
+                    <td>KUNTAL HORE</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>SANSKRIT</td>
+                    <td>MA(SANSKRIT), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo9.jpg" alt="TAMAL CHAKRABORTY" class="staff-photo"></td>
+                    <td>TAMAL CHAKRABORTY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>ENGLISH</td>
+                    <td>MA(ENGLISH), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo10.jpg" alt="PABITRA ROY" class="staff-photo"></td>
+                    <td>PABITRA ROY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>HISTORY</td>
+                    <td>MA(HISTORY), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo11.jpg" alt="PRITIKANA NANDI" class="staff-photo"></td>
+                    <td>PRITIKANA NANDI</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>ENGLISH</td>
+                    <td>MA(ENGLISH)</td>
+                </tr>
+                <tr>
+                    <td><img src="photo12.jpg" alt="SUJIT ROY" class="staff-photo"></td>
+                    <td>SUJIT ROY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>ENGLISH</td>
+                    <td>MA(ENGLISH), D.FL.ED</td>
+                </tr>
+                <tr>
+                    <td><img src="photo13.jpg" alt="BISWAJIT BANIK" class="staff-photo"></td>
+                    <td>BISWAJIT BANIK</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>CHEMISTRY</td>
+                    <td>M.sc(CHEMISTRY), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo14.jpg" alt="PIKLU HALDAR" class="staff-photo"></td>
+                    <td>PIKLU HALDAR</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>PURE SCIENCE</td>
+                    <td>B.SC(PURE SCIENCE), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo15.jpg" alt="SANGITA DAS" class="staff-photo"></td>
+                    <td>SANGITA DAS</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>BIO SCIENCE</td>
+                    <td>M.sc(BOTANY), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo16.jpg" alt="INDRAJIT ROY" class="staff-photo"></td>
+                    <td>INDRAJIT ROY</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>PHYSICAL EDUCATION</td>
+                    <td>BA, B.P.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo17.jpg" alt="MUKTI MOCHARI" class="staff-photo"></td>
+                    <td>MUKTI MOCHARI</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>PHYSICAL EDUCATION</td>
+                    <td>BA, B.P.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo18.jpg" alt="PRADIP BARMAN" class="staff-photo"></td>
+                    <td>PRADIP BARMAN</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>MATHEMATICS</td>
+                    <td>B.sc(MATH), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo19.jpg" alt="PARAN MAJUMDAR" class="staff-photo"></td>
+                    <td>PARAN MAJUMDAR</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>HISTORY</td>
+                    <td>MA(HISTORY), Bed</td>
+                </tr>
+                <tr><td><img src="photo20.jpg" alt="MOSLEM HOQUE" class="staff-photo"></td>
+                    <td>MOSLEM HOQUE</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>ENGLISH</td>
+                    <td>MA(ENGLISH), B.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo21.jpg" alt="PRADIP KUMAR BARMAN" class="staff-photo"></td>
+                    <td>PRADIP KUMAR BARMAN</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>ENGLISH</td>
+                    <td>MA(ENGLISH), B.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo22.jpg" alt="SUKLA BASAK" class="staff-photo"></td>
+                    <td>SUKLA BASAK</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>GEOGRAPHY</td>
+                    <td>M.A(GEOGRAPHY), Bed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo23.jpg" alt="RUPAM BISWAS" class="staff-photo"></td>
+                    <td>RUPAM BISWAS</td>
+                    <td>ASSISTANT TEACHER</td>
+                    <td>HISTORY</td>
+                    <td>MA, Bed, M.ed</td>
+                </tr><tr>
+                    <td><img src="photo24.jpg" alt="GOUTAM ROY" class="staff-photo"></td>
+                    <td>GOUTAM ROY</td>
+                    <td>CONTRA TEACHER</td>
+                    <td>PHILOSOPHY</td>
+                    <td>MA(PHILOSOPHY), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo25.jpg" alt="MANUJA BEGAM" class="staff-photo"></td>
+                    <td>MANUJA BEGAM</td>
+                    <td>PARA TEACHER</td>
+                    <td>BENGALI</td>
+                    <td>MA(BENGALI), D.EL.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo26.jpg" alt="JAGADANANDA ROY" class="staff-photo"></td>
+                    <td>JAGADANANDA ROY</td>
+                    <td>PARA TEACHER</td>
+                    <td>ENGLISH</td>
+                    <td>MA(ENGLISH), B.ed, D.EL.ED</td>
+                </tr>
+                <tr>
+                    <td><img src="photo27.jpg" alt="RASHMITA ROY" class="staff-photo"></td>
+                    <td>RASHMITA ROY</td>
+                    <td>PARA TEACHER</td>
+                    <td>HISTORY</td>
+                    <td>MA(HISTORY), D.EL.ED</td>
+                </tr>
+                <tr>
+                    <td><img src="photo28.jpg" alt="CHAMPA SARKAR" class="staff-photo"></td>
+                    <td>CHAMPA SARKAR</td>
+                    <td>PARA TEACHER</td>
+                    <td>HISTORY</td>
+                    <td>MA(HISTORY), D.EL.ED</td>
+                </tr>
+                <tr>
+                    <td><img src="photo29.jpg" alt="MANORANJAN ROY" class="staff-photo"></td>
+                    <td>MANORANJAN ROY</td>
+                    <td>PARA TEACHER</td>
+                    <td>BIO SCIENCE</td>
+                    <td>B.SC(BIO SCIENCE), D.El.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo30.jpg" alt="MITA KAR" class="staff-photo"></td>
+                    <td>MITA KAR</td>
+                    <td>PARA TEACHER</td>
+                    <td>GEOGRAPHY</td>
+                    <td>BA(GEOGRAPHY), D.EL.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo31.jpg" alt="UTPAL GHOSH" class="staff-photo"></td>
+                    <td>UTPAL GHOSH</td>
+                    <td>PARA TEACHER</td>
+                    <td>BENGALI</td>
+                    <td>MA(BENGALI), D.EL.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo32.jpg" alt="GOBINDA SARKAR" class="staff-photo"></td>
+                    <td>GOBINDA SARKAR</td>
+                    <td>PARA TEACHER</td>
+                    <td>MATHEMATICS</td>
+                    <td>B.SC(PURE SCIENCE), D.El.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo33.jpg" alt="SURESH CH ROY" class="staff-photo"></td>
+                    <td>SURESH CH ROY</td>
+                    <td>PARA TEACHER</td>
+                    <td>ENGLISH</td>
+                    <td>MA(ENGLISH), B.ed(SPL), D.EL.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo34.jpg" alt="SWAPNA DAS" class="staff-photo"></td>
+                    <td>SWAPNA DAS</td>
+                    <td>PARA TEACHER</td>
+                    <td>GEOGRAPHY</td>
+                    <td>BA(GEOGRAPHY), D.EL.Ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo35.jpg" alt="MUGDHA BHATTACHARJEE" class="staff-photo"></td>
+                    <td>MUGDHA BHATTACHARJEE</td>
+                    <td>ICT TEACHER</td>
+                    <td>COMPUTER APPLICATION</td>
+                    <td>MASTER OF COMPUTER APPLICATION</td>
+                </tr>
+                <tr>
+                    <td><img src="photo36.jpg" alt="TAPAN ROY" class="staff-photo"></td>
+                    <td>TAPAN ROY</td>
+                    <td>PART TIME TEACHER</td>
+                    <td>BENGALI</td>
+                    <td>MA(BENGALI), B.ed</td>
+                </tr>
+                <tr>
+                    <td><img src="photo37.jpg" alt="LAXMI ROY" class="staff-photo"></td>
+                    <td>LAXMI ROY</td>
+                    <td>PART TIME TEACHER</td>
+                    <td></td>
+                    <td>B.A</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Design & Developed by Mugdha Bhattacharjee (MCA), ICT School Teacher (Gossairhat Rajamohan High School (XII))</p>
+        <p>&copy; 2025 Gossairhat Rajamohan High School. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

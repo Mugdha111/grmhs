@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gossairhat Rajamohan High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        /* Header Section */
+        .header-content {
+            padding: 20px;
+            background: url('school_background.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header-content img {
+            width: 80px;
+            margin: 10px 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content h1 {
+            font-size: 2.3rem;
+            margin: 0;
+            animation: textAnimation 2s infinite;
+        }
+
+        .header-content p {
+            font-size: 1.1rem;
+            color: #FFFF00;
+            margin: 0;
+        }
+
+        @keyframes textAnimation {
+            0%, 100% { color: #fff; }
+            50% { color: #ff0; }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #483D8B;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.0rem;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(52, 58, 64, 0.8); /* Transparent background */
+        }
+
+        .dropdown-menu a {
+            color: #7FFF00;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #495057;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold; /* Making the font bold for all nav links */
+        }
+
+        .dropdown-toggle {
+            font-weight: bold; /* Making the font bold for dropdown toggles */
+        }
+
+        .dropdown-item {
+            font-weight: bold; /* Making the font bold for dropdown items */
+        }
+
+        /* About Us Section */
+        .about-section {
+            background-color: #E0FFFF;
+            color: #343a40;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            color: BLACK;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* History Section */
+        .history-section {
+            background-color: #E0FFFF;
+            color: #343a40;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .history-section h2 {
+            color: BLACK;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .history-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline li {
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 2px solid #4CAF50;
+            position: relative;
+        }
+
+        .timeline li:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+        }
+
+        .timeline li h3 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            color: #4CAF50;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            background-color: #E0FFFF;
+            color: #343a40;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-section h2 {
+            color: BLACK;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+
+        .marquee {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee img {
+            height: 200px;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .marquee img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .gallery-caption {
+            text-align: center;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Previous Headmasters Section */
+        .headmasters-section {
+            background-color: #E0FFFF;
+            color: #343a40;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .headmasters-section h2 {
+            color: BLACK;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .headmasters-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .headmasters-section table, th, td {
+            border: 1px solid #4CAF50;
+        }
+
+        .headmasters-section th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .headmasters-section th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .headmasters-section img {
+            width: 80px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-content img {
+                width: 60px;
+                margin: 10px 0;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .header-content p {
+                font-size: 1rem;
+            }
+
+            .carousel-item img {
+                height: 300px;
+            }
+
+            .about-section, .history-section, .gallery-section, .headmasters-section {
+                padding: 20px;
+            }
+
+            .about-section h2, .history-section h2, .gallery-section h2, .headmasters-section h2 {
+                font-size: 2rem;
+            }
+
+            .marquee img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header-content">
+        <img src="grmhslogo.png" alt="Left Logo">
+        <div>
+            <h1>GOSSAIRHAT RAJAMOHAN HIGH SCHOOL(XII)</h1>
+            <p><strong>Estd. 1952</strong></p>
+            <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+              <p><strong>Index No: NI-041</strong></p>
+              <p><strong>HS Code No: 108088</strong></p>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+              <p><strong>Voc Code: 8798</strong></p>
+              <p><strong>Affiliated to WBBSE and WBCHSE</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ABOUT US</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="about us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <strong>about us</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <a class="dropdown-item" href="aboutus.html"><strong>about us</strong></a>
+                            <a class="dropdown-item" href="contactus.html">contact us</a>                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="academicsDropdown">
+<a class="dropdown-item" href="admission.HTML">admission</a>
+                            
+                            <a class="dropdown-item" href="STUDENT_DETAILS.HTML">Student Details</a>
+                            <a class="dropdown-item" href="results.HTML">Results</a>
+                            <a class="dropdown-item" href="ROUTINE.HTML">Routine</a>
+                            <a class="dropdown-item" href="syllabus.HTML">syllabus</a>
+<a class="dropdown-item" href="toppers.html">toppers of 2024-25</a>
+
+                        </div>
+<li class="nav-item"><a class="nav-link" href="gallery.html">gallery</a></li>
+
+                    </li>
+<li class="nav-item"><a class="nav-link" href="SCHOLaRSHIP.HTML">Scholarships</a></li>
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="administrationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Administration
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="administrationDropdown">
+                            <a class="dropdown-item" href="managing.html">Managing Committee</a>
+                            <a class="dropdown-item" href="teaching.html">Teaching Staff</a>
+                            <a class="dropdown-item" href="nts.html">Non-Teaching Staff</a>
+                            <a class="dropdown-item" href="VOCATIONAL.html">Vocational</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="miscellaneousDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Miscellaneous
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="miscellaneousDropdown">
+                            <a class="dropdown-item" href="sports.HTML">Sports</a>
+                            <a class="dropdown-item" href="labs.HTML">lab</a>
+                            <a class="dropdown-item" href="smartclass.HTML">smart class</a>
+                            <a class="dropdown-item" href="HOUSE.html">House</a>
+                            <a class="dropdown-item" href="ACHIVEMENTS.html">Achievements</a>
+                            <a class="dropdown-item" href="STUDENT_COUNCIL.html">Student Council</a>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="alumni.html">alumni</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="about-section">
+        <h2>Welcome to Gossairhat Rajamohan High School</h2>
+        <p>The foundation stone of Gonsairhat Rajamohan High School was laid on 15 January 1952. The school was initially named Gonsairhat Minor English School. In 1950, through a meeting, the educated people of the area formed a working committee of nine members by appointing Dembua Roy as the president and Rajamohan Roy as the secretary. The two wives of Rajamohan Roy, the main pioneer of the school, Sarlabala Roy and Nanibala Roy, jointly donated fifteen bighas of land, Rupkant Roy and Pathuram Roy jointly donated seventy-five decimals of land, and Debaru Roy and Ravikant Roy jointly donated twenty decimals of land in the name of the school. The school was approved as a 2 Class Junior School on 1st January 1953. The school was approved as a 4-Class Junior High School from 1st January 1966. The then headmaster of the school was Nanibhushan Sarkar. The school also had a dormitory. Later, Sudhir Chandra Tagore joined the school as the head teacher. In 1982 the school was upgraded to the secondary level. Then Mantri Ram Roy took charge as the head teacher of the school. In 2002, this school was approved as a higher secondary school. Later, Tapas Kumar Bhadra worked as the head teacher of the school. That small school of that day is standing magnificently with branches spread. Md. Mokhtar Hossain is currently serving as the head teacher of the school. The current student strength of the school is around 1500. There are 22 full time teachers, 11 adjunct teachers, 2 clerks, 2 group D and 1 contractual teacher. In 2022 Central Government Swachh Vidyalaya Award (2021-2022). This school has been honored. Awarded in total four categories at the district level</p>
+    </div>
+
+    <!-- History Section -->
+    <div class="history-section">
+        <h2>Our History</h2>
+        <ul class="timeline">
+            <li>
+                <h3>1952</h3>
+                <p>Gossairhat Rajamohan High School was established with the vision of providing quality education to the local community. At that time the school's name was Gossairhat Minor English School.</p>
+            </li>
+            <li>
+                <h3>1966</h3>
+                <p>The school expanded its facilities and introduced new academic programs and upgraded to class 4.</p>
+            </li>
+            <li>
+                <h3>1982</h3>
+                <p>The school was upgraded to a Secondary School.</p>
+            </li>
+            <li>
+                <h3>2002</h3>
+                <p>The school was upgraded to a Higher Secondary School.</p>
+            </li>
+            <li>
+                <h3>2026</h3>
+                <p>We are excited to celebrate our Platinum Jubilee (75 years).</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-section">
+        <h2>Photo Gallery</h2>
+        <div class="marquee-container">
+            <div class="marquee">
+                <img src="sc.jpeg" alt="School Building">
+                <img src="sc1.jpeg" alt="Science Lab">
+                <img src="sc2.jpeg" alt="Library">
+                <img src="sc3.jpeg" alt="Computer Lab">
+                <img src="sc4.jpeg" alt="Sports Ground">
+                <img src="sc5.jpeg" alt="Cultural Event">
+            </div>
+        </div>
+    </div>
+
+    <!-- Previous Headmasters Section -->
+    <div class="headmasters-section">
+        <h2>Previous Headmasters</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Tenure</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                    <td><img src="headmaster1.jpg" alt="Headmaster 1"></td>
+                    <td>Nanibhushan Sarkar</td>
+                    <td>1952 - 1966</td>
+                </tr>
+                <tr>
+                    <td><img src="headmaster2.jpg" alt="Headmaster 2"></td>
+                    <td>Sudhir Chandra Tagore</td>
+                    <td>1966 - 1982</td>
+                </tr>
+                <tr>
+                    <td><img src="headmaster3.jpg" alt="Headmaster 3"></td>
+                    <td>Mantri Ram Roy</td>
+                    <td>1982 - 2002</td>
+                </tr>
+                <tr>
+                    <td><img src="headmaster4.jpg" alt="Headmaster 4"></td>
+                    <td>Tapas Kumar Bhadra</td>
+                    <td>2002 - 2022</td>
+                </tr>
+                <tr>
+                    <td><img src="headmaster5.jpg" alt="Headmaster 5"></td>
+                    <td>Md. Mokhtar Hossain</td>
+                    <td>2022 - Present</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Design & Developed by Mugdha Bhattacharjee (MCA), ICT School Teacher (Gossairhat Rajamohan High School (XII))</p>
+        <p>&copy; 2025 Gossairhat Rajamohan High School. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
